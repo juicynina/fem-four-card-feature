@@ -7,3 +7,61 @@
     --grayish-blue: hsl(229, 6%, 66%);
     --very-light-grey: hsl(0, 0%, 98%);
 }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.title h1 {
+    line-height: 1rem;
+}
+
+.title h1:nth-child(1) {
+    font-weight: 200;
+}
+.card-list {
+    display: grid;
+    grid-template-columns: 3;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--very-light-grey);
+    border-radius: 0.5em;
+    margin: 2em;
+}
+.card h2 {
+    font-weight: 400;
+}
+.card p {
+    color: var(--grayish-blue);
+}
+
+.card img {
+    height: 3em;
+    width: 3em;
+    align-self: flex-end;
+    margin-right: 1.5em;
+}
+
+.card.card-1 {
+    border-style: solid none none none;
+    border-top-color: var(--cyan);
+}
+.card.card-2 {
+    border-style: solid none none none;
+    border-top-color: var(--red);
+}
+.card.card-3 {
+    border-style: solid none none none;
+    border-top-color: var(--orange);
+}
+.card.card-4 {
+    border-style: solid none none none;
+    border-top-color: var(--blue);
+}
+
+
